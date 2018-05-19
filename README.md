@@ -12,4 +12,8 @@ aws ec2 authorize-security-group-ingress --group-name <group_name> --protocol tc
 * S'assurer que le fichier de clé a un accès restraint `chmod 400 <nom_fichier_key_pair.pem>
 * Se connecter comme suit: `ssh -i <nom_fichier_key_pair.pem> ec2-user@ec2-ip.region.compute.amazonaws.com`
 
-
+## Gérer une instance
+### Arrêter une instance
+```
+aws ec2 stop-instances --instance-ids <id>
+```
